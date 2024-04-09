@@ -2,7 +2,9 @@ const api  = require('./api.js');
 
 const getTodos = async () => {
     try {
-        const { data } = await api.get("todos/" )
+        const { data } = await api.get(
+        "https://jsonplaceholder.typicode.com/todos/" 
+        )
         console.log(data);
     } catch (err) {
         console.log(err);
@@ -13,7 +15,7 @@ const getTodos = async () => {
 const getTodoParams = async (id) => {
     try {
         const { data } = await axios.get(
-            "todos/",
+        `https://jsonplaceholder.typicode.com/todos/`,
         {
             params: {
             id: id,
@@ -29,7 +31,9 @@ const getTodoParams = async (id) => {
 //url id
 const getTodo = async (id) => {
     try {
-        const { data } = await axios.get(`todos/${id}`);
+        const { data } = await axios.get(
+            `https://jsonplaceholder.typicode.com/todos/${id}`
+        );
         console.log(data);
     } catch (err) {
         console.log(err);
@@ -39,7 +43,7 @@ const getTodo = async (id) => {
 const addTodo = async () => {
     try {
         const response = await axios.post(
-            "todos",
+            "https://jsonplaceholder.typicode.com/todos",
             {
             userId: 1,
             title: "wash and dry dishes",
@@ -56,7 +60,7 @@ const addTodo = async () => {
 const putTodo= async () => {
     try {
         const response = await axios.put(
-            "todos/2",
+            "https://jsonplaceholder.typicode.com/todos/2",
             {
                 title: "wash and dry dishes",
                 completed: true,

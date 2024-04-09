@@ -29,7 +29,7 @@ const getTodoParams = async (id) => {
 //url id
 const getTodo = async (id) => {
     try {
-        const { data } = await axios.get(`todos/${id}`);
+        const { data } = await axios.get(`${id}`);
         console.log(data);
     } catch (err) {
         console.log(err);
