@@ -63,7 +63,6 @@ const putTodo= async () => {
             "https://jsonplaceholder.typicode.com/todos",
             {
                 title: "wash and dry dishes",
-                completed: true,
             }
         );
         console.log(response);
