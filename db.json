@@ -1,12 +1,36 @@
 {
-    "posts": [
-        { "id": 1, "title": "json-server", "author": "typicode" }
-    ],
-    "todos": [
-        { "id": 1, "title": "todo", "completed": false }
-    ],
-    "comments": [
-        { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "profile": { "name": "typicode" }
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "todos": [
+    {
+      "id": 1,
+      "title": "todo",
+      "completed": false
+    },
+    {
+      "id": "41cb",
+      "title": "wash and dry dishes",
+      "completed": false
+    },
+    {
+      "id": "3679",
+      "title": "wash and dry dishes",
+      "completed": false
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }
